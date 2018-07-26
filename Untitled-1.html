@@ -1,0 +1,91 @@
+<html lang="zh">
+ <head> 
+  <meta charset="utf-8" /> 
+  <meta name="viewport" content="width=100%, initial-scale=1" /> 
+  <title> 你好！  </title> 
+  <style type="text/css" media="screen, print">
+            @font-face {
+              font-family: "Bitstream Vera Serif Bold";
+              src: url("./fronts/Amalfi-Regular.woff");
+                  
+             }
+         #skPlayer{
+         margin:27px auto 0;
+        }
+        .container{
+            margin-top:200px;
+        }
+        .doc{
+            text-align:left;
+        }
+        pre{
+            padding-left:2em;
+            font-size:16px;
+            line-height:24px;
+            color:#fff;
+            background-color:#272822;
+            border-radius:3px;
+        }
+        @media screen and (max-width:768px){
+            body{
+                width:100%;
+            }
+            .doc{
+                display:none;
+            }
+        } 
+                
+                               
+       </style> 
+  <link rel="shortcut icon" href="facvion.ico" /> 
+ </head> 
+ <body bgcolor="#E0FFFF">  
+  <!-- 你好！我是时雨，我正在学习如何使用Html. 你可以来这里找我聊天 https://t.me/bakashigure --> 
+  <p style="font-family:Bitstream Vera Serif Bold;font-size:60px;background-color:#AAAAAA;text-align:center"> <img src="heart-giftbox.png" width="50" height="50" /> L-O-V-E FBI-HECATE <img src="heart-giftbox.png" width="50" height="50" /> </p> 
+  <hr /> 
+  <div id="skPlayer" class="skPlayer-list-off"></div> 
+  <p style="font-family:Microsoft YaHei;font-size:50px;text-align:center"> 你好！很高兴见到你！ <br /> <br /> 你来到了一个施工现场！这里还有很多未完成的东西！ <br /> </p> 
+  <p style="font-family:Microsoft YaHei;font-size:40px;text-align:center"> <a href="https://t.me/bakashigure">在TG上跟我聊天！</a> </p> 
+  <br /> 
+  <br /> 
+  <br /> 
+  <p style="font-family:Bitstream Vera Serif Bold;font-size:25px;text-align:center"> what so what so anymore </p> 
+  <br /> 
+  <br /> 
+  <br /> 
+  <br /> 
+  <br /> 
+  <hr /> 
+  <p style="font-family:Bitstream Vera Serif Bold;font-size:150px;text-align:center"> HELLO </p> 
+  <hr /> 
+  <hr /> 
+  <hr /> 
+  <div align="center"> 
+   <a href="http://steamcommunity.com/id/tushansusu/"> <img border="0" src="pic/steam.png" width="30px" ;="" height="30px" /> </a> 
+   <a href="https://twitter.com/bakashigure"> <img border="0" src="pic/twitter.png" width="30px" ;="" height="30px" /> </a> 
+   <img src="sunburst-heart.png" width="30px" ;="" height="30px" />
+  </div> 
+  <p style="font-family:Century Gothic;text-align:center;font-size:15px"> BAKASHIGURE <br /> MP3 player fork from <a href="https://github.com/wangpengfei15975/skPlayer/">wangpengfei15975/skPlayer</a> <br /> last edited @ 2017.12.9 9:53 p.m. </p> 
+  <script src="./dist/skPlayer.min.js"></script> 
+  <script>
+        var player = new skPlayer({
+            autoplay: true,
+            listshow: false,
+            mode: 'listloop',
+            music: {
+                type: 'file',
+                source: [
+                { 
+                  name: '打上花火',
+                  author: 'DAOKO / 米津玄師',
+                  src: 'music/fire.mp3',
+                  cover: 'music/fire.png'
+            },
+            ]
+          }
+        });
+
+
+    </script>   
+ </body>
+</html>
