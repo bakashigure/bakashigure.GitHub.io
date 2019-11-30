@@ -1,61 +1,39 @@
-<!DOCTYPE >
-<html lang="zh">
+<!DOCTYPE html>
+<html>
 
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <style>
+    <title>Pathetic.</title>
+    <style type="text/css">
         a {
             text-decoration: none
         }
-    </style>
-    <style type="text/css">
         a:link {
             color: rgb(255, 187, 238)
         }
-
-        /* 未访问的链接 */
-
         a:visited {
-            color: #00FF00
+            color: rgb(110, 170, 238)
         }
-
-        /* 已访问的链接 */
-
         a:hover {
             color: rgb(255, 255, 255)
         }
-
-        /* 鼠标移动到链接上 */
-
-       
-        /* 选定的链接 */
-    </style>
-    <link rel="shortcut icon" href="heart.ico" />
-    <script type="text/javascript" src="http://cdn.webfont.youziku.com/wwwroot/js/wf/youziku.api.min.js"></script>
-    <script type="text/javascript">
-        $youziku.load("body", "03600f12bd3444efa5b1a4c7dc07438f", "Source-Han-Light");
-        /*$youziku.load("#id1,.class1,h1", "03600f12bd3444efa5b1a4c7dc07438f", "Source-Han-Light");*/
-        /*．．．*/
-        $youziku.draw();
-    </script>
-    <script src="jquery-3.3.1.min.js"></script>
-    <script>
-        $(document).ready(function () {
-            $("#div1").delay(2000).fadeIn(2000);
-        });
-    </script>
-
-    <meta name="viewport" content="width=100%, initial-scale=1" />
-    <title>Pathetic.</title>
-    <style>
         @font-face {
             font-family: "texgyreschola";
             src: url("./fronts/texgyreschola-italic-webfont.woff");
         }
+        @font-face {
+            font-family: "Amalfi-Regular";
+            src: url("./fronts/Amalfi-Regular.woff");
+        }
+        
+        @font-face {
+            font-family: "sc";
+            src: url("./fronts/sc.ttf")  format('truetype');
+        }
 
         .a {
             position: absolute;
-            top: 50%;
+            top: 40%;
             left: 50%;
             -webkit-transform: translate(-50%, -50%);
             -moz-transform: translate(-50%, -50%);
@@ -63,42 +41,73 @@
             -o-transform: translate(-50%, -50%);
             transform: translate(-50%, -50%);
         }
+
+        .b {
+            position: absolute;
+            bottom: 0%;
+            left: 50%;
+            -webkit-transform: translate(-50%, -50%);
+            -moz-transform: translate(-50%, -50%);
+            -ms-transform: translate(-50%, -50%);
+            -o-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+        }
+
+        .c {
+    position: absolute; 
+           top: 45%;
+            left: 50%;
+            -webkit-transform: translate(50%, 50%);
+            -moz-transform: translate(50%, 50%);
+            -ms-transform: translate(50%, 50%);
+            -o-transform: translate(50%, 50%);
+            transform: translate(-50%, 50%);
+}
     </style>
+    <link rel="shortcut icon" href="heart.ico" />
+    <script src="jquery-3.3.1.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $("#div1").delay(1500).slideDown(2000);
+            $("#div2").delay(3000).slideDown(2000);
+            $("#div3").delay(4000).fadeIn(2000);
+        });
+    </script>
 </head>
 
-<body style="background:#000;overflow:auto;" ondragstart="return false;" onselectstart="return false;">
-
-
+<body style="background:#000;overflow:hidden;" ondragstart="return false;" onselectstart="return false;">
     <div id="container">
         <canvas class="sketch" id="sketch-0" style="display:none;"></canvas>
     </div>
-
-
     <script type="text/javascript" src="./src/sketch.min.js"></script>
     <script type="text/javascript" src="./src/index2.js"></script>
 
     <div id="div1" class="a" style="display:none;">
-        <p style="font-size:20px;text-align:center;color:white">
-            <br />"已经，没有多少空气了."
+        <p style="font-family:texgyreschola;font-size:20px;text-align:center;color:white">
+            <br />"Nothing Ends."
         </p>
-
         <p style="font-family:texgyreschola;font-size:10px;text-align:center;color:rgb(36, 36, 36)">
             <br />/colorful/
-        </p>
+            </p>
     </div>
 
-
-    <footer>
-
-        <p style="font-family:texgyreschola,sans-serif;text-align:center;font-size:7px;color:white">
-
-
-            <a href="http://blog.shigure.fun" target="_blank">blog</a>
-            <br /> last edited @ 2018.7.26 22:13</p>
-
-    </footer>
+    <div id="div2" class="c" style="display:none;">
+            <p style="font-family:sc;font-size:20px;text-align:center;color:white">
+                "时雨"</br>19 / 大二 / INTP-F / USELESS
+            </p>
+     </div>
+    
 
 
+
+    <div id="div3" class="b" style="display:none">
+
+        <p style="font-family:texgyreschola,sans-serif;text-align:center;font-size:7px;color:rgba(255, 255, 255, 0.459)">
+            <a href="https://blog.shigure.fun" target="_blank">blog   </a>
+            <a href="https://twitter.com/bakashigure" target="_blank">&nbsp;&nbsp;twitter</a>
+            <br /> last edited @ 2019.12.1 04:46
+        </p>
+    </div>
 
 </body>
 
